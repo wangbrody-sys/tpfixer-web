@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: '躍動手機維修 - 台北中正區 | HomePod、iPod、AirPods維修 螺絲滑牙處理',
-  description: '台北古亭手機維修，HomePod 1/2代觸控不開機檢修、iPod Classic SSD改裝全系列、AirPods全型號電池更換、螺絲滑牙崩牙專業處理。現場維修。',
-  keywords: 'HomePod維修, iPod維修, AirPods電池更換, 螺絲滑牙處理, 台北手機維修, 古亭手機維修',
+  title: '躍動手機維修，專業維修 / 透明報價 / 現場快速取件 台北市中正區，台大、師大、古亭捷運，專精 手機維修 平板維修 筆電維修',
+  description: '台北古亭手機維修，專精手機、平板、筆電、耳機、喇叭、播放器維修。現場快速取件，6個月保固，透明報價。',
+  keywords: '躍動手機維修, 手機維修, 平板維修, 筆電維修, 古亭捷運, 台北中正區, 維修推薦',
   openGraph: {
     title: '躍動手機維修 - 台北古亭站',
     description: '現場快速維修，30分鐘取件，6個月保固',

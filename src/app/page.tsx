@@ -36,16 +36,16 @@ function Hero() {
           躍動<span className="text-yellow-300">手機維修</span>
         </h1>
         <p className="text-xl md:text-2xl mb-4 opacity-90">
-          台北中正區 Apple 全系列維修專家
+          台北中正區 3C 裝置維修專家
         </p>
         <p className="text-lg mb-10 opacity-80">
-          iPhone / iPad / HomePod / AirPods / iPod Classic
+          手機 / 平板 / 音樂播放器 / 耳機 / 喇叭 / 筆電
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a href="https://lin.ee/QZIqSo9" className="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 hover:text-purple-800 transition-all hover:scale-105 shadow-xl">
-            📱 立即 LINE 預約
+          <a href="http://www.cdma.com.tw" className="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 hover:text-purple-800 transition-all hover:scale-105 shadow-xl">
+            📱 了解所有維修項目
           </a>
-          <a href="tel:0223938998" className="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-purple-600 transition-all hover:scale-105">
+          <a href="http://www.cdma.com.tw" className="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-purple-600 transition-all hover:scale-105">
             📞 02-2393-8998
           </a>
         </div>
@@ -65,46 +65,68 @@ function Hero() {
 function Services() {
   const services = [
     {
-      icon: '🔊',
-      title: 'HomePod 觸控不開機',
+      icon: '📱',
+      title: '手機維修',
+      tag: '主力項目',
+      desc: '各代手機面板更換、電池更換、Face ID 修復、麥克風異常、充電問題處理。',
+      highlight: false,
+      link: 'http://www.cdma.com.tw',
+    },
+    {
+      icon: '⌚',
+      title: '智慧手錶維修',
       tag: '熱門服務',
-      desc: 'HomePod 1/2代觸控不良、喇叭異常、主機板問題，專業檢修現場處理。',
-      highlight: true,
+      desc: '觸控不良、喇叭異常、主機板問題，全系列現場檢修處理。',
+      highlight: false,
+      link: 'http://www.cdma.com.tw',
     },
     {
       icon: '🎵',
-      title: 'iPod Classic SSD改裝',
+      title: '音樂播放器改裝',
       tag: '經典款',
-      desc: 'iPod Classic 全系列升級 SSD，容量變大、播放時間延長，資料搬家服務。',
+      desc: 'Classic 全系列升級 SSD 大容量，播放時間延長，資料搬家服務。',
       highlight: false,
+      link: 'http://www.cdma.com.tw',
     },
     {
       icon: '🎧',
-      title: 'AirPods 全型號電池',
+      title: '耳機电池更換',
       tag: '當日完成',
-      desc: 'AirPods 1/2/3/Pro/Pro2/Max 電池更換，原廠品質保證，當天取件。',
+      desc: '全型號電池更換，原廠品質保證，當天取件。',
       highlight: false,
+      link: 'http://www.cdma.com.tw',
     },
     {
       icon: '🔩',
       title: '螺絲滑牙崩牙處理',
       tag: '專業技術',
-      desc: 'MacBook、iPhone、遊戲機，任何螺絲滑牙、崩牙、異物嵌入，專業工具取出。',
+      desc: '筆電、手機、遊戲機，任何螺絲滑牙、崩牙、異物嵌入，專業工具取出。',
       highlight: true,
+      link: 'http://www.cdma.com.tw',
     },
     {
-      icon: '📱',
-      title: 'iPhone 主機板維修',
-      tag: '保固服務',
-      desc: 'iPhone 各代維修，包含面板更換、電池更換、Face ID 修復、麥克風異常。',
-      highlight: false,
-    },
-    {
-      icon: '⌚',
-      title: 'Apple Watch 維修',
+      icon: '💻',
+      title: '筆電維修',
       tag: '疑難杂症',
-      desc: 'Apple Watch 面板更換、电池更換、感測器問題、錶面破裂修復。',
+      desc: '筆電面板、鍵盤、硬碟、記憶體升級，、主機板故障檢修。',
       highlight: false,
+      link: 'http://www.cdma.com.tw',
+    },
+    {
+      icon: '🔊',
+      title: '家用喇叭維修',
+      tag: '熱門服務',
+      desc: '觸控不良、喇叭異常、無法開機，全系列專業檢修。',
+      highlight: true,
+      link: 'http://www.cdma.com.tw',
+    },
+    {
+      icon: '🔧',
+      title: '平板維修',
+      tag: '保固服務',
+      desc: '面板更換、電池更換、充電異常、HOME 鍵維修，全型號服務。',
+      highlight: false,
+      link: 'http://www.cdma.com.tw',
     },
   ]
   return (
@@ -112,11 +134,11 @@ function Services() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">專業維修服務</h2>
-          <p className="text-xl text-gray-600">涵蓋所有 Apple 裝置疑難杂症</p>
+          <p className="text-xl text-gray-600">涵蓋所有 3C 裝置疑難杂症，點擊了解詳情</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map(s => (
-            <div key={s.title} className={`relative rounded-2xl p-6 ${s.highlight ? 'bg-gradient-to-br from-orange-500 to-pink-500 text-white' : 'bg-white border border-gray-200 text-gray-800'} shadow-lg hover:shadow-xl transition-all hover:-translate-y-1`}>
+            <a key={s.title} href={s.link} className={`relative rounded-2xl p-6 ${s.highlight ? 'bg-gradient-to-br from-orange-500 to-pink-500 text-white' : 'bg-white border border-gray-200 text-gray-800'} shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 block`}>
               {s.highlight && (
                 <span className="absolute -top-3 -right-3 bg-yellow-400 text-purple-900 text-xs font-bold px-3 py-1 rounded-full">
                   ★ 熱門
@@ -128,8 +150,14 @@ function Services() {
                 {s.tag}
               </span>
               <p className={`text-sm leading-relaxed ${s.highlight ? 'opacity-90' : 'text-gray-600'}`}>{s.desc}</p>
-            </div>
+              <div className="mt-4 text-sm font-bold opacity-60">→ 查看報價</div>
+            </a>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <a href="http://www.cdma.com.tw" className="inline-block bg-gradient-to-r from-purple-600 to-pink-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all hover:scale-105 shadow-xl">
+            查看完整維修項目與報價 →
+          </a>
         </div>
       </div>
     </section>
@@ -141,7 +169,7 @@ function WhyUs() {
     { icon: '⚡', title: '30分鐘取件', desc: '多數維修當天完成，不用漫長等待' },
     { icon: '💰', title: '透明報價', desc: '維修前完整報價，杜絕中途加價' },
     { icon: '🛡️', title: '6個月保固', desc: '維修後享有完整保固服務' },
-    { icon: '🏆', title: 'UNIQLO/GU認證', desc: '通過國際品牌維修廠商認證' },
+    { icon: '🏆', title: '國際品牌認證', desc: '通過兩大國際品牌維修廠商認證' },
     { icon: '📍', title: '古亭站1分鐘', desc: '捷運古亭站8號出口，步行1分鐘' },
     { icon: '📋', title: '不用預約', desc: '現場登記，隨到隨修' },
   ]
@@ -170,14 +198,14 @@ function CTA() {
   return (
     <section className="py-24 px-6 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-black mb-6">裝置壞了？立刻處理！</h2>
-        <p className="text-xl mb-10 opacity-90"> LINE 詢問或致電，我們會給你最專業的建議</p>
+        <h2 className="text-4xl md:text-5xl font-black mb-6">裝置壞了？來這裡處理的！</h2>
+        <p className="text-xl mb-10 opacity-90"> 查看完整維修項目與報價，一切資訊都公開透明</p>
         <div className="flex flex-wrap justify-center gap-6">
-          <a href="https://lin.ee/QZIqSo9" className="bg-white text-orange-600 px-10 py-5 rounded-full font-extrabold text-xl hover:bg-yellow-200 transition-all hover:scale-105 shadow-2xl">
-            💬 加入 LINE
+          <a href="http://www.cdma.com.tw" className="bg-white text-orange-600 px-10 py-5 rounded-full font-extrabold text-xl hover:bg-yellow-200 transition-all hover:scale-105 shadow-2xl">
+            🌐 前往躍動官網
           </a>
-          <a href="tel:0223938998" className="border-2 border-white text-white px-10 py-5 rounded-full font-extrabold text-xl hover:bg-white hover:text-orange-600 transition-all hover:scale-105">
-            📞 02-2393-8998
+          <a href="https://lin.ee/QZIqSo9" className="border-2 border-white text-white px-10 py-5 rounded-full font-extrabold text-xl hover:bg-white hover:text-green-600 transition-all hover:scale-105">
+            💬 LINE 線上詢問
           </a>
         </div>
         <div className="mt-8 text-sm opacity-80">
@@ -197,9 +225,10 @@ function Footer() {
           <p>📍 台北市中正區羅斯福路四段76號（古亭站8號出口）</p>
           <p>📞 02-2393-8998</p>
           <p>⏰ 營業時間：平日 11:00-21:00 / 假日 12:00-20:00</p>
+          <p>🔗 <a href="http://www.cdma.com.tw" className="underline hover:text-white">www.cdma.com.tw</a></p>
         </div>
         <div className="border-t border-gray-700 pt-6 text-sm">
-          © 2025 TPFIXER / CDMA 躍動手機維修 — 12年在地維修經驗
+          © 2025 TPFIXER / 躍動手機維修 — 12年在地維修經驗
         </div>
       </div>
     </footer>
