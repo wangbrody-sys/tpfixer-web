@@ -54,10 +54,27 @@ function Hero() {
             <span key={tag} className="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">{tag}</span>
           ))}
         </div>
-        <div className="mt-8">
-          <a href="http://www.cdma.com.tw" className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-            <span className="text-base">🔖</span>
-            <span>貼心提醒：維修前請至 www.cdma.com.tw 確認最新品項與報價</span>
+        <div className="mt-10">
+          <a href="http://www.cdma.com.tw" className="inline-block text-left bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-6 py-4 text-white shadow-xl hover:bg-white/20 transition-all hover:scale-[1.02]">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-lg">📌</span>
+              <span className="font-bold text-base">貼心提醒</span>
+            </div>
+            <ul className="space-y-2 text-sm text-white/90">
+              <li className="flex items-start gap-2">
+                <span className="text-green-300 font-bold">•</span>
+                <span>原彩導致螢幕沒那麼亮？或偏粉紅色？建議一般使用者關閉原彩，偏好夜間模式可取代抗藍光玻璃</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-300 font-bold">•</span>
+                <span>聽對方聲音太小聲？請用少量酒精＋牙刷輕刷聽筒與底部鐵網處</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-300 font-bold">•</span>
+                <span>充電接觸不良？用牙籤輕刮尾插內部異物即可改善</span>
+              </li>
+            </ul>
+            <div className="mt-3 text-xs text-green-200 font-medium">→ 更多維修小技巧 www.cdma.com.tw</div>
           </a>
         </div>
       </div>
