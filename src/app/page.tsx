@@ -54,6 +54,9 @@ function Hero() {
             <span key={tag} className="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">{tag}</span>
           ))}
         </div>
+        <div className="mt-8 inline-block bg-gradient-to-r from-green-400 to-emerald-500 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg">
+          💡 貼心提醒：維修前請至 <a href="http://www.cdma.com.tw" className="underline hover:text-yellow-200">www.cdma.com.tw</a> 確認最新維修品項與報價
+        </div>
       </div>
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-white opacity-60">
         ↓ 向下看更多
